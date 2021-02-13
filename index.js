@@ -10,11 +10,26 @@ if (typeof document.hidden !== 'undefined') {
   hidden = 'webkitHidden';
   visibilityChange = 'webkitvisibilitychange';
 }
+
+const sendNotification = () => {
+  const notification = new Notification(
+    'New message from notifications desktop',
+    {
+      body: 'I am very happy with this',
+    }
+  );
+  return notification;
+};
+
 document.addEventListener('click', async () => {
   await Notification.requestPermission();
   Notification.permission === 'granted'
-    ? setTimeout(() => {
-        return alert('Testing ');
-      }, 500)
+    ? // ? chrome.notifications.create({
+      //     title: 'Just wanted to notify you',
+      //     message: 'How great it is!',
+      //     iconUrl: '/robot-face_1f916.png',
+      //     type: 'basic',
+      //   })
+      console.log(sendNotification())
     : console.log('You do not have permission');
 });
