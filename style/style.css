@@ -1,3 +1,103 @@
-body {
-  background-color: blueviolet;
+* {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  width: 77%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  margin: 0 0 0 8rem;
+  padding: 0.7rem;
+}
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+span {
+  text-transform: uppercase;
+  color: #5b86e4;
+  padding: 0.19rem;
+  border-radius: 10px;
+  font-weight: 800;
+}
+.subcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+img {
+  width: 400px;
+  margin-bottom: 0.7rem;
+  display: block;
+  opacity: 0.5;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 54%;
+  height: 60%;
+  padding: 5rem 0.2rem;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+label {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.19rem;
+}
+input {
+  width: 85%;
+  padding: 1.2rem;
+  outline: none;
+  border: none;
+  /* border-radius: 30px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 12px rgb(255, 255, 255); */
+  border-radius: 39px;
+  background: linear-gradient(315deg, #fdfcfc, #ffffff);
+  box-shadow: inset 4px 4px 6px #ababab, inset -4px -4px 6px #ffffff;
+}
+
+input::placeholder {
+  opacity: 0.5;
+  font-size: 0.65rem;
+  color: black;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+  transition: 0.5s;
+}
+button {
+  padding: 1rem;
+  margin-top: 1rem;
+  outline: none;
+  border-radius: 30px;
+  font-weight: 900;
+  background: #3f2b96;
+  color: #fff;
+  border: none;
+  box-shadow: -10px -10px 15px rgb(255, 255, 255),
+    4px 4px 5px rgba(5, 5, 5, 0.2);
+  transition: 0.4s;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #35286e;
+}
+
+button:active {
+  transform: scale(0.96);
+  transition: 0.1s;
 }

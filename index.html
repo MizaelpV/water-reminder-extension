@@ -5,8 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Water reminder extension</title>
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="container">
+      <h1>
+        ¿Sabías que tomar suficiente <span>agua</span> al día es indispensable
+        para el funcionamiento de nuestro cerebro? ☘️
+      </h1>
+      <div class="subcontainer">
+        <img src="img/08.png" alt="image" />
+        <form>
+          <label
+            >¿Por cuanto tiempo quieres que te avisemos que tomes agua?</label
+          >
+          <input
+            type="text"
+            placeholder="Horario laboral (8 hrs)"
+            autocomplete="off"
+            id="totalTime"
+          />
+          <label>¿Cada cuanto tiempo quieres que te avisemos?</label>
+          <input
+            type="text"
+            placeholder="45 min"
+            id="intervalTime"
+            autocomplete="off"
+          />
+          <button onclick="activate()" type="button">Comencemos</button>
+        </form>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

@@ -21,15 +21,25 @@ const sendNotification = () => {
   return notification;
 };
 
-document.addEventListener('click', async () => {
-  await Notification.requestPermission();
-  Notification.permission === 'granted'
-    ? // ? chrome.notifications.create({
-      //     title: 'Just wanted to notify you',
-      //     message: 'How great it is!',
-      //     iconUrl: '/robot-face_1f916.png',
-      //     type: 'basic',
-      //   })
-      console.log(sendNotification())
-    : console.log('You do not have permission');
-});
+// document.addEventListener('click', async () => {
+//   await Notification.requestPermission();
+//   Notification.permission === 'granted'
+//     ? // ? chrome.notifications.create({
+//       //     title: 'Just wanted to notify you',
+//       //     message: 'How great it is!',
+//       //     iconUrl: '/robot-face_1f916.png',
+//       //     type: 'basic',
+//       //   })
+//       console.log(sendNotification())
+//     : console.log('You do not have permission');
+// });
+
+// window.addEventListener('load', alert('loaded'));
+
+const totalTime = document.getElementById('totalTime');
+const intervalTime = document.getElementById('intervalTime');
+
+const activate = () => {
+  console.log(totalTime.value);
+  totalTime.value = '';
+};
