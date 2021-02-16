@@ -1,0 +1,20 @@
+{
+  "name": "water-reminder-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MizaelpV/water-reminder-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MizaelpV/water-reminder-extension/issues"
+  },
+  "homepage": "https://github.com/MizaelpV/water-reminder-extension#readme"
+}
