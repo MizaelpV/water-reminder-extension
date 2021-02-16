@@ -17,7 +17,7 @@
 }
 h1 {
   text-align: center;
-  margin: 2rem;
+  margin: 1.5rem;
 }
 span {
   text-transform: uppercase;
@@ -29,28 +29,22 @@ span {
 .subcontainer {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  position: relative;
 }
-img {
-  width: 400px;
-  margin-bottom: 0.7rem;
-  display: block;
-  opacity: 0.5;
-}
+
 form {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  width: 54%;
+  width: 50%;
   height: 60%;
   padding: 5rem 0.2rem;
   border-radius: 50px;
-  background: #ffffff;
-  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 13px 13px 20px #969696, -13px -13px 20px #ffffff;
 }
 label {
   font-weight: 600;
@@ -62,15 +56,14 @@ input {
   padding: 1.2rem;
   outline: none;
   border: none;
-  /* border-radius: 30px;
-  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 12px rgb(255, 255, 255); */
-  border-radius: 39px;
-  background: linear-gradient(315deg, #fdfcfc, #ffffff);
-  box-shadow: inset 4px 4px 6px #ababab, inset -4px -4px 6px #ffffff;
+  border-radius: 30px;
+  border-radius: 65px;
+  background: #f5f4f4;
+  box-shadow: inset 3.5px 3.5px 5px #939393, inset -7px -7px 5px #ffffff;
 }
 
 input::placeholder {
-  opacity: 0.5;
+  opacity: 0.7;
   font-size: 0.65rem;
   color: black;
 }
@@ -95,6 +88,7 @@ button {
 button:hover {
   cursor: pointer;
   background: #35286e;
+  transform: translateY(-2px);
 }
 
 button:active {
