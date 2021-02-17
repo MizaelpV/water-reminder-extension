@@ -39,6 +39,10 @@ const sendNotification = () => {
 const totalTime = document.getElementById('totalTime');
 const intervalTime = document.getElementById('intervalTime');
 
+const calculateNotification = (totalTime, intervalTime) => {
+  const modifiedTotal = totalTime / 60;
+};
+
 const activate = () => {
   console.log(totalTime.value);
   totalTime.value = '';
