@@ -44,11 +44,11 @@ const calculateNotification = (totalTime, intervalTime) => {
 };
 
 const activate = () => {
-  totalTime.value === '' || intervalTime.value === ''
-    ? ''
-    : alert(
+  totalTime.value !== '' || intervalTime.value !== ''
+    ? alert(
         `Te avisaremos durante ${totalTime.value} hrs cada ${intervalTime.value} min 💪🏽`
-      );
+      )
+    : '';
 
   totalTime.value = '';
   intervalTime.value = '';
