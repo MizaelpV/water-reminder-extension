@@ -16,7 +16,7 @@
 }
 h1 {
   text-align: center;
-  margin: 1.5rem;
+  margin-top: 1.5rem;
 }
 span {
   text-transform: uppercase;
@@ -30,7 +30,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
 }
 
 form {
@@ -96,7 +96,7 @@ button:active {
 }
 
 .modal {
-  /* position: absolute; */
+  position: absolute;
   width: 49%;
   display: flex;
   justify-content: center;
@@ -118,4 +118,8 @@ button:active {
 
 .overlay {
   background: rgba(0, 0, 0, 0.5);
+}
+
+.none {
+  display: none;
 }

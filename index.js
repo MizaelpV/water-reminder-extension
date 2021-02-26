@@ -1,54 +1,42 @@
-var hidden, visibilityChange;
-if (typeof document.hidden !== 'undefined') {
-  // Opera 12.10 and Firefox 18 and later support
-  hidden = 'hidden';
-  visibilityChange = 'visibilitychange';
-} else if (typeof document.msHidden !== 'undefined') {
-  hidden = 'msHidden';
-  visibilityChange = 'msvisibilitychange';
-} else if (typeof document.webkitHidden !== 'undefined') {
-  hidden = 'webkitHidden';
-  visibilityChange = 'webkitvisibilitychange';
-}
+// var hidden, visibilityChange;
+// if (typeof document.hidden !== 'undefined') {
+//   // Opera 12.10 and Firefox 18 and later support
+//   hidden = 'hidden';
+//   visibilityChange = 'visibilitychange';
+// } else if (typeof document.msHidden !== 'undefined') {
+//   hidden = 'msHidden';
+//   visibilityChange = 'msvisibilitychange';
+// } else if (typeof document.webkitHidden !== 'undefined') {
+//   hidden = 'webkitHidden';
+//   visibilityChange = 'webkitvisibilitychange';
+// }
 
-const sendNotification = () => {
-  const notification = new Notification(
-    'New message from notifications desktop',
-    {
-      body: 'I am very happy with this',
-    }
-  );
-  return notification;
-};
-
-// document.addEventListener('click', async () => {
-//   await Notification.requestPermission();
-//   Notification.permission === 'granted'
-//     ? // ? chrome.notifications.create({
-//       //     title: 'Just wanted to notify you',
-//       //     message: 'How great it is!',
-//       //     iconUrl: '/robot-face_1f916.png',
-//       //     type: 'basic',
-//       //   })
-//       console.log(sendNotification())
-//     : console.log('You do not have permission');
-// });
-
-// window.addEventListener('load', alert('loaded'));
+// const sendNotification = () => {
+//   const notification = new Notification(
+//     'New message from notifications desktop',
+//     {
+//       body: 'I am very happy with this',
+//     }
+//   );
+//   return notification;
+// };
 
 const totalTime = document.getElementById('totalTime');
 const intervalTime = document.getElementById('intervalTime');
+const text = document.querySelector('.paragraphModal');
 
-const calculateNotification = (totalTime, intervalTime) => {
-  const modifiedTotal = totalTime / 60;
+const modal = document.getElementById('modal');
+const closeModal = () => {
+  modal.style.display = 'none';
 };
 
 const activate = () => {
-  totalTime.value !== '' || intervalTime.value !== ''
-    ? alert(
-        `Te avisaremos durante ${totalTime.value} hrs cada ${intervalTime.value} min 💪🏽`
-      )
-    : '';
+  if (totalTime.value !== '' || intervalTime.value !== '') {
+    modal.style.display = 'block';
+    text.innerText = `¡Genial, te avisaremos cada ${intervalTime.value} minutos durante ${totalTime.value} horas.`;
+  } else {
+    alert('Debes agregar por cuanto tiempo quieres que te avisemos');
+  }
 
   totalTime.value = '';
   intervalTime.value = '';
