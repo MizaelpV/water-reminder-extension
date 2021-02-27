@@ -33,11 +33,17 @@ const closeModal = () => {
 const activate = () => {
   if (totalTime.value !== '' || intervalTime.value !== '') {
     modal.style.display = 'block';
-    text.innerText = `¡Genial, te avisaremos cada ${intervalTime.value} minutos durante ${totalTime.value} horas.`;
+    text.innerText = `¡Te avisaremos cada ${intervalTime.value} minutos durante ${totalTime.value} horas! 🚀`;
   } else {
-    alert('Debes agregar por cuanto tiempo quieres que te avisemos');
+    alert('Debes agregar por cuanto tiempo quieres que te avisemos 😬');
   }
-
+  setTimer(intervalTime.value);
   totalTime.value = '';
   intervalTime.value = '';
+};
+
+const setTimer = (min) => {
+  setTimeout(() => {
+    alert('testing');
+  }, min);
 };
