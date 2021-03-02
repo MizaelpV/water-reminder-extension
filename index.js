@@ -43,7 +43,8 @@ const activate = () => {
 };
 
 const setTimer = (min) => {
+  const miliseconds = min * 1000;
   setTimeout(() => {
     alert('testing');
-  }, min);
+  }, miliseconds);
 };
