@@ -32,8 +32,10 @@ const closeModal = () => {
 
 const activate = () => {
   if (totalTime.value !== '' || intervalTime.value !== '') {
+    let minutes = intervalTime.value;
+    let hours = totalTime.value;
     modal.style.display = 'block';
-    text.innerText = `¡Te avisaremos cada ${intervalTime.value} minutos durante ${totalTime.value} horas! 🚀`;
+    text.innerText = `¡Te avisaremos cada ${minutes} minutos durante ${hours} horas! 🚀`;
   } else {
     alert('Debes agregar por cuanto tiempo quieres que te avisemos 😬');
   }
