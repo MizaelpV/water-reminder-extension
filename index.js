@@ -53,4 +53,4 @@ const setTimer = (min) => {
   }
 };
 
-bubbly();
+// bubbly();
