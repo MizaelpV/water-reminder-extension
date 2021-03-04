@@ -50,7 +50,7 @@ const setTimer = (min) => {
     setTimeout(() => {
       alert('testing');
     }, miliseconds);
-  } else {
-    alert('¡Escucha!');
   }
 };
+
+bubbly();
