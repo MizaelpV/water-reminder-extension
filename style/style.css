@@ -49,7 +49,7 @@ form {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  width: 50%;
+  width: 43%;
   height: 60%;
   padding: 5rem 0.2rem;
   border-radius: 50px;
@@ -108,7 +108,7 @@ button:active {
 
 .modal {
   position: absolute;
-  width: 49%;
+  width: 29%;
   display: flex;
   justify-content: center;
   align-items: center;
