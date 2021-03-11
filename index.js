@@ -1,43 +1,27 @@
-// var hidden, visibilityChange;
-// if (typeof document.hidden !== 'undefined') {
-//   // Opera 12.10 and Firefox 18 and later support
-//   hidden = 'hidden';
-//   visibilityChange = 'visibilitychange';
-// } else if (typeof document.msHidden !== 'undefined') {
-//   hidden = 'msHidden';
-//   visibilityChange = 'msvisibilitychange';
-// } else if (typeof document.webkitHidden !== 'undefined') {
-//   hidden = 'webkitHidden';
-//   visibilityChange = 'webkitvisibilitychange';
-// }
-
-// const sendNotification = () => {
-//   const notification = new Notification(
-//     'New message from notifications desktop',
-//     {
-//       body: 'I am very happy with this',
-//     }
-//   );
-//   return notification;
-// };
-
+const modal = document.getElementById('modal');
+const modalAlert = document.getElementById('modalAlert');
+const text = document.querySelector('.paragraphModal');
 const totalTime = document.getElementById('totalTime');
 const intervalTime = document.getElementById('intervalTime');
-const text = document.querySelector('.paragraphModal');
 
-const modal = document.getElementById('modal');
 const closeModal = () => {
-  modal.style.display = 'none';
+  if (modal.style.display === 'block') {
+    return (modal.style.display = 'none');
+  } else if (modalAlert.style.display === 'block') {
+    return (modalAlert.style.display = 'none');
+  }
 };
 
 const activate = () => {
-  if (totalTime.value !== '' || intervalTime.value !== '') {
+  if (totalTime.value !== '' && intervalTime.value !== '') {
     let minutes = intervalTime.value;
     let hours = totalTime.value;
     modal.style.display = 'block';
     text.innerText = `¡Te avisaremos cada ${minutes} minutos durante ${hours} horas! 🚀`;
   } else {
-    alert('Debes agregar por cuanto tiempo quieres que te avisemos 😬');
+    modalAlert.style.display = 'block';
+    console.log(text.innerText);
+    text.innerText = `¡Te avisaremos cada minutos durante  horas! 🚀`;
   }
   setTimer(intervalTime.value);
   totalTime.value = '';
@@ -47,10 +31,9 @@ const activate = () => {
 const setTimer = (min) => {
   if (min !== '') {
     const miliseconds = min * 1000;
+    console.log(miliseconds);
     setTimeout(() => {
       alert('testing');
     }, miliseconds);
   }
 };
-
-// bubbly();
