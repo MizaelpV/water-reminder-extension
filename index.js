@@ -19,9 +19,9 @@ const activate = () => {
     modal.style.display = 'block';
     text.innerText = `¡Te avisaremos cada ${minutes} minutos durante ${hours} horas! 🚀`;
   } else {
-    modalAlert.style.display = 'block';
+    text.innerHTML = `¡Te avisaremos cada minutos durante  horas! 🚀`;
     console.log(text.innerText);
-    text.innerText = `¡Te avisaremos cada minutos durante  horas! 🚀`;
+    modalAlert.style.display = 'block';
   }
   setTimer(intervalTime.value);
   totalTime.value = '';
