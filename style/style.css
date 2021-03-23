@@ -30,7 +30,6 @@ h1 {
 span {
   text-transform: uppercase;
   color: #fff;
-  /* color: #35a8f0; */
   padding: 0.19rem 0.59rem;
   border-radius: 10px;
   font-weight: 800;
@@ -123,7 +122,7 @@ button:active {
   width: 100px;
 }
 
-.containerModal .paragraphModal {
+.container-modal .paragraph-modal {
   padding-top: 2rem;
 }
 

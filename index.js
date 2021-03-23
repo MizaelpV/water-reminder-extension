@@ -1,8 +1,9 @@
 const modal = document.getElementById('modal');
 const modalAlert = document.getElementById('modalAlert');
-const text = document.querySelector('.paragraphModal');
+const text = document.querySelector('.paragraph-modal');
 const totalTime = document.getElementById('totalTime');
 const intervalTime = document.getElementById('intervalTime');
+const motivation = document.querySelector('.motivation');
 
 const closeModal = () => {
   modal.style.display === 'block' || modalAlert.style.display === 'block';
@@ -10,15 +11,18 @@ const closeModal = () => {
 };
 
 const activate = () => {
-  if (totalTime.value !== '' && intervalTime.value !== '') {
+  if (totalTime.value === '' && intervalTime.value === '') {
+    text.innerText = `Un poco de tiempo para ayudarte ⏰`;
+    // text.style.fontSize = '40px';
+    modal.style.display = 'block';
+    motivation.innerText = 'Necesitamos tu ayuda 💪🏽';
+    motivation.style.backgroundColor = '#f3f3f3';
+    motivation.style.color = '#3f2b96';
+  } else {
     let minutes = intervalTime.value;
     let hours = totalTime.value;
     modal.style.display = 'block';
     text.innerText = `¡Te avisaremos cada ${minutes} minutos durante ${hours} horas! 🚀`;
-  } else {
-    text.innerHTML = `¡Te avisaremos cada minutos durante  horas! 🚀`;
-    console.log(text.innerText);
-    modalAlert.style.display = 'block';
   }
   setTimer(intervalTime.value);
   totalTime.value = '';
