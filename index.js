@@ -5,11 +5,8 @@ const totalTime = document.getElementById('totalTime');
 const intervalTime = document.getElementById('intervalTime');
 
 const closeModal = () => {
-  if (modal.style.display === 'block') {
-    return (modal.style.display = 'none');
-  } else if (modalAlert.style.display === 'block') {
-    return (modalAlert.style.display = 'none');
-  }
+  modal.style.display === 'block' || modalAlert.style.display === 'block';
+  return (modal.style.display = 'none'), (modalAlert.style.display = 'none');
 };
 
 const activate = () => {
