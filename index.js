@@ -12,7 +12,7 @@ const closeModal = () => {
 
 const activate = () => {
   if (totalTime.value === '' && intervalTime.value === '') {
-    text.innerText = `Un poco de tiempo para ayudarte ⏰`;
+    text.innerText = `Indicanos por cuanto tiempo te avisamos ⏰`;
     // text.style.fontSize = '40px';
     modal.style.display = 'block';
     motivation.innerText = 'Necesitamos tu ayuda 💪🏽';
