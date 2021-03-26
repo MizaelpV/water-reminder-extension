@@ -20,8 +20,9 @@ const activate = () => {
   } else {
     let minutes = intervalTime.value;
     let hours = totalTime.value;
-    modal.style.display = 'block';
+    motivation.innerText = 'Perfecto, vamos a darle 🚀';
     text.innerText = `¡Te avisaremos cada ${minutes} minutos durante ${hours} horas! 🚀`;
+    modal.style.display = 'block';
   }
   setTimer(intervalTime.value);
   totalTime.value = '';
