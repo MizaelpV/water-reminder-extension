@@ -32,7 +32,6 @@ const activate = () => {
 const setTimer = (min) => {
   if (min !== '') {
     const miliseconds = min * 1000;
-    console.log(miliseconds);
     setTimeout(() => {
       alert('testing');
     }, miliseconds);
