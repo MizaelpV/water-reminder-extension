@@ -34,7 +34,7 @@ const setTimer = (min) => {
     const miliseconds = min * 1000;
     console.log(miliseconds);
     setTimeout(() => {
-      alert('testing');
+      alert('testing alert');
     }, miliseconds);
   }
 };
