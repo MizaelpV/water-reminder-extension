@@ -20,7 +20,7 @@ const activate = () => {
   } else {
     let minutes = intervalTime.value;
     let hours = totalTime.value;
-    motivation.innerText = 'Perfecto, vamos a darle 🚀';
+    motivation.innerText = 'Perfecto, vamos a darle lets go 🚀 ';
     text.innerText = `¡Te avisaremos cada ${minutes} minutos durante ${hours} horas! 🚀`;
     modal.style.display = 'block';
   }
