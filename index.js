@@ -33,7 +33,7 @@ const setTimer = (min) => {
   if (min !== '') {
     const miliseconds = min * 1000;
     setTimeout(() => {
-      alert('Alert  🔥');
+      console.log('Alert  🔥');
     }, miliseconds);
   }
 };
