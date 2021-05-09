@@ -6,15 +6,6 @@
 
 .container {
   max-width: 100%;
-  /* background: rgb(2, 0, 36);
-  background: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(23, 134, 202, 1) 0%,
-    rgba(88, 43, 218, 1) 24%,
-    rgba(167, 0, 111, 1) 100%,
-    rgba(217, 3, 104, 1) 100%
-  ); */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -23,9 +14,11 @@
   bottom: 0;
   padding: 0.7rem;
 }
+
 h1 {
   text-align: center;
   margin-top: 1.5rem;
+  max-width: 80%;
 }
 span {
   text-transform: uppercase;
