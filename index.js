@@ -21,7 +21,7 @@ const activate = () => {
     let minutes = intervalTime.value;
     let hours = totalTime.value;
     motivation.innerText = 'Perfecto, vamos a darle lets go 🚀 ';
-    text.innerText = `¡Te avisaremos cada ${minutes} minutos durante ${hours} horas! 🚀 ⏰`;
+    text.innerText = `¡Te avisaremos cada ${minutes} minutos durante ${hours} horas! 🚀 `;
     modal.style.display = 'block';
   }
   setTimer(intervalTime.value);
