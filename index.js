@@ -19,7 +19,7 @@ const activate = () => {
     motivation.style.color = '#3f2b96';
   } else {
     motivation.innerText = 'Perfecto, vamos a darle 🚀 ';
-    text.innerText = `¡Te avisaremos cada ${minutes} minutos durante ${hours} horas!  `;
+    text.innerText = `¡Te avisaremos cada ${minutes} minutos durante ${hours} horas!`;
     modal.style.display = 'block';
   }
   setTimer(minutes);
