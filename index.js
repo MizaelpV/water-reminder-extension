@@ -14,7 +14,7 @@ const activate = () => {
   if (hours === '0' || hours === '' || minutes === '0' || minutes === '') {
     text.innerText = `Indicanos por cuanto tiempo te avisamos 🚀 `;
     modal.style.display = 'block';
-    motivation.innerText = 'Necesitamos tu ayuda 💪🏽';
+    motivation.innerText = 'Necesitamos tu ayuda 💪🏽 🖖🏽';
     motivation.style.backgroundColor = '#f3f3f3';
     motivation.style.color = '#3f2b96';
   } else {
